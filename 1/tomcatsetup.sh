@@ -16,7 +16,7 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 echo "The directory to run tomcat service is /opt/tomcat"
 echo "Downloading and installing tomcat"
 cd /tmp
-# curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz
+curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz
 sudo mkdir /opt/tomcat
 sudo tar xzvf apache-tomcat-9.0.46.tar.gz -C /opt/tomcat --strip-components=1
 echo "Modifying permissions for new user"
